@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    background-color: white;
+    padding: 30px 0px;
+    text-align: center;
+    box-shadow: 0px 1px 4px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.top {
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.task-container {
+    width: 60%;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 30px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.task-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.description {
+    flex-grow: 1;
+}
+
+.actions {
+    margin-right: 0; /* Pour enlever la marge du côté droit des boutons */
+}
+
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.red {
+    background-color: #dc3545;
+    color: #fff;
+    border: 1px solid #dc3545;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.red:hover {
+    background-color: #bd2130;
+}
+
+.edit {
+    background-color: #17a2b8;
+    color: #fff;
+    border: 1px solid #17a2b8;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit:hover {
+    background-color: #138496;
+}
