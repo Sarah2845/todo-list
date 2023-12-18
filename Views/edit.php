@@ -38,6 +38,7 @@ include_once('../Controllers/ControllerTask.php');
                 echo "<input type='text' name='task_description' value='" . $task['tache_description'] . "' required>";
                 echo "<button type='submit'>Enregistrer les modifications</button>";
                 echo "</form>";
+                edit_data_post($task['tache_id'], $task['tache_description']);
             } else {
                 echo "<h1>Tâche non trouvée</h1>";
             }

@@ -20,12 +20,12 @@ include_once('../Controllers/ControllerTask.php');
             delete_task($_POST['id']);
 
             echo "<h1>Tâche supprimée avec succès</h1>";
-            echo "<p><a href='http://todolist/Views/app.php'>Retour à la liste des tâches</a></p>";
+            echo "<p><a href='http://todolist/Views/index.php'>Retour à la liste des tâches</a></p>";
 
         } elseif ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['id'])) {
             
             delete_task($_GET['id']);
-            echo "<p><a href='http://todolist/Views/app.php'>Retour à la liste des tâches</a></p>";
+            echo "<p><a href='http://todolist/Views/index.php'>Retour à la liste des tâches</a></p>";
         } else {
             echo "<h1>Paramètre ID manquant</h1>";
         }

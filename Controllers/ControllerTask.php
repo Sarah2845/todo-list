@@ -10,7 +10,7 @@ $tasks = [];
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['task_description'])) {
 
     insert_task($_POST['task_description']);
-    echo "<script>window.location.href = 'http://todolist/Views/app.php';</script>";
+    echo "<script>window.location.href = 'http://todolist/Views/index.php';</script>";
 }
 
 function display_tasks_view($tasks) {
